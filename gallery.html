@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    
+    <!--Gallery block-->
+    <section class="section gallery">
+        <div class="container">
+            <!--Interactive title-->
+            <h2 class="visually-hidden" lang="en">Picture ice cream</h2>
+    
+            <!--Images list-->
+            <ul>
+                <li>
+                    <picture>
+                        <source srcset="./images/gallery/posuda-1280.png, 
+                        ./images/gallery/posuda-1280@2x.png 2x" media="(min-width: 1280px)">
+                        <source srcset="./images/gallery/posuda-768.png, 
+                        ./images/gallery/posuda-768@2x.png 2x" media="(min-width: 768px)">
+                        <source srcset="./images/gallery/posuda-320.png, 
+                        ./images/gallery/posuda-320@2x.png 2x" media="(min-width: 320px)">
+                        <img src="../images/gallery/posuda-320.png" alt="Dishes picture">
+                    </picture>
+                </li>
+
+                <li>
+                    <picture>
+                        <source
+                        srcset="
+                        ./images/gallery/ice-cream-1280.png, 
+                        ../images/gallery/ice-cream-1280@2x.png 2x
+                        "
+                        media="(min-width: 1280px)"
+                        >
+                        <source
+                        srcset="
+                        ./images/gallery/ice-cream-768.png,
+                        ./images/gallery/ice-cream-768@2x.png
+                        "
+                        media="(min-width: 768px)"
+                        >
+                        <source
+                        srcset="
+                        ./images/gallery/ice-cream-320.png,
+                        ./images/gallery/ice-cream-320@2x.png
+                        "
+                        media="(min-width: 768px)"
+                        >
+                        <img src="./images/gallery/ice-cream-320.png" alt="ice cream picture">
+                    </picture>
+                </li>
+            </ul>
+    
+        </div>
+    </section>
+
+</body>
+</html>
